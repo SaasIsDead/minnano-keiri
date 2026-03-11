@@ -1,6 +1,6 @@
 # コントリビューションガイド
 
-「みんなの経理」へのコントリビュートに興味を持っていただきありがとうございます！
+「Choreia Books」へのコントリビュートに興味を持っていただきありがとうございます！
 このドキュメントでは、開発環境の構築から、プルリクエストの作成までの手順を説明します。
 
 ## 開発環境のセットアップ
@@ -15,8 +15,8 @@
 
 ```bash
 # 1. リポジトリをフォーク＆クローン
-git clone https://github.com/<あなたのユーザー名>/minnano-keiri.git
-cd minnano-keiri
+git clone https://github.com/<あなたのユーザー名>/Books.git
+cd Books
 
 # 2. WASMビルド
 wasm-pack build --target web
@@ -83,7 +83,7 @@ cp -r pkg web/pkg
 
 ## Issue の報告
 
-バグ報告や機能提案は [Issues](https://github.com/Choreia/minnano-keiri/issues) からお願いします。
+バグ報告や機能提案は [Issues](https://github.com/Choreia/Books/issues) からお願いします。
 
 ### バグ報告のテンプレート
 

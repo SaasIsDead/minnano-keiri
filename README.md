@@ -1,13 +1,13 @@
-# みんなの経理
+# Choreia Books
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/使ってみる-GitHub%20Pages-brightgreen)](https://choreia.github.io/minnano-keiri/)
+[![GitHub Pages](https://img.shields.io/badge/使ってみる-GitHub%20Pages-brightgreen)](https://choreia.github.io/Books/)
 
-**個人から中小法人まで使える完全無料の会計ソフト**
+**個人から中小法人まで使える完全無料の会計ソフト。Choreia Formsの姉妹プロジェクト。**
 
 サーバー不要・インストール不要。ブラウザだけで税金計算から請求書作成まで、経理業務をまるごとカバーします。データはすべてご自身のGoogle Sheetsに保存されるため、プライバシーも安心です。
 
-**[使ってみる](https://choreia.github.io/minnano-keiri/)**
+**[使ってみる](https://choreia.github.io/Books/)**
 
 ## 特徴
 
@@ -48,8 +48,8 @@
 
 ```bash
 # リポジトリのクローン
-git clone https://github.com/Choreia/minnano-keiri.git
-cd minnano-keiri
+git clone https://github.com/Choreia/Books.git
+cd Books
 
 # Rustとwasm-packのインストール（未インストールの場合）
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -71,7 +71,7 @@ python3 -m http.server 8080
 ## プロジェクト構成
 
 ```
-minnano-keiri/
+Books/
 ├── src/
 │   └── lib.rs          # WASMバインディング（kaikei-rsのラッパー）
 ├── web/

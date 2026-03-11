@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline'; connect-src https://www.googleapis.com https://accounts.google.com https://sheets.googleapis.com; frame-src https://accounts.google.com; img-src 'self' https://*.googleusercontent.com data:;">
-  <title>みんなの経理 | 無料会計ソフト</title>
+  <title>Choreia Books | 無料会計ソフト</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      background: #faf8f5;
+      color: #2c2418;
       line-height: 1.6;
     }
     .container {
@@ -50,8 +50,8 @@
       border-radius: 50%;
     }
     .auth-bar .user-type-badge {
-      background: #e8f5e9;
-      color: #2e7d32;
+      background: #f5ece5;
+      color: #7a3d22;
       padding: 2px 8px;
       border-radius: 4px;
       font-size: 0.8em;
@@ -107,9 +107,9 @@
     }
     .nav-item:hover { background: #f9f9f9; color: #333; }
     .nav-item.active {
-      color: #4CAF50;
-      border-bottom-color: #4CAF50;
-      background: #f8fdf8;
+      color: #a0522d;
+      border-bottom-color: #a0522d;
+      background: #fdf8f5;
     }
 
     /* Setup screen */
@@ -137,8 +137,8 @@
       text-align: center;
     }
     .setup-option:hover {
-      border-color: #4CAF50;
-      box-shadow: 0 4px 12px rgba(76,175,80,0.15);
+      border-color: #a0522d;
+      box-shadow: 0 4px 12px rgba(160,82,45,0.15);
     }
     .setup-option .icon { font-size: 2.5em; margin-bottom: 12px; }
     .setup-option .name { font-weight: bold; font-size: 1.1em; margin-bottom: 4px; }
@@ -158,7 +158,7 @@
       font-size: 1.1em;
       margin-bottom: 16px;
       padding-bottom: 8px;
-      border-bottom: 2px solid #4CAF50;
+      border-bottom: 2px solid #a0522d;
     }
     .form-group { margin-bottom: 16px; }
     label {
@@ -179,8 +179,8 @@
     }
     input:focus, select:focus, textarea:focus {
       outline: none;
-      border-color: #4CAF50;
-      box-shadow: 0 0 0 2px rgba(76,175,80,0.2);
+      border-color: #a0522d;
+      box-shadow: 0 0 0 2px rgba(160,82,45,0.2);
     }
     .checkbox-group {
       display: flex;
@@ -194,7 +194,7 @@
     .btn-primary {
       width: 100%;
       padding: 14px;
-      background: #4CAF50;
+      background: #a0522d;
       color: white;
       border: none;
       border-radius: 8px;
@@ -203,13 +203,13 @@
       cursor: pointer;
       transition: background 0.2s;
     }
-    .btn-primary:hover { background: #43A047; }
-    .btn-primary:active { background: #388E3C; }
+    .btn-primary:hover { background: #8b4526; }
+    .btn-primary:active { background: #7a3d22; }
     .btn-primary:disabled { background: #ccc; cursor: not-allowed; }
 
     .btn-secondary {
       padding: 10px 20px;
-      background: #1a73e8;
+      background: #4a6741;
       color: white;
       border: none;
       border-radius: 8px;
@@ -218,7 +218,7 @@
       cursor: pointer;
       transition: background 0.2s;
     }
-    .btn-secondary:hover { background: #1565c0; }
+    .btn-secondary:hover { background: #3d5836; }
     .btn-secondary:disabled { background: #ccc; cursor: not-allowed; }
 
     .btn-danger {
@@ -235,14 +235,14 @@
     .btn-outline {
       padding: 10px 20px;
       background: #fff;
-      color: #4CAF50;
-      border: 2px solid #4CAF50;
+      color: #a0522d;
+      border: 2px solid #a0522d;
       border-radius: 8px;
       font-size: 0.95em;
       font-weight: bold;
       cursor: pointer;
     }
-    .btn-outline:hover { background: #f1f8e9; }
+    .btn-outline:hover { background: #faf5f0; }
 
     .results { display: none; }
     .result-row {
@@ -275,7 +275,7 @@
       text-align: center;
       font-size: 0.85em;
       margin-top: 8px;
-      color: #4CAF50;
+      color: #a0522d;
     }
     .page { display: none; }
     .page.active { display: block; }
@@ -358,7 +358,7 @@
       margin-bottom: 16px;
     }
     .invoice-table th {
-      background: #4CAF50;
+      background: #a0522d;
       color: #fff;
       padding: 8px 12px;
       text-align: left;
@@ -401,7 +401,7 @@
     .lp-hero {
       text-align: center;
       padding: 60px 20px 40px;
-      background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 50%, #fff8e1 100%);
+      background: linear-gradient(135deg, #f5ece5 0%, #faf5f0 50%, #fff8e1 100%);
       border-radius: 0 0 40px 40px;
       margin: -20px -20px 0;
       padding-left: 40px;
@@ -410,7 +410,7 @@
     .lp-hero h1 {
       font-size: 2.4em;
       margin-bottom: 12px;
-      color: #2e7d32;
+      color: #7a3d22;
     }
     .lp-hero .tagline {
       font-size: 1.15em;
@@ -425,7 +425,7 @@
     .lp-cta {
       display: inline-block;
       padding: 16px 48px;
-      background: #4CAF50;
+      background: #a0522d;
       color: #fff;
       border: none;
       border-radius: 12px;
@@ -434,11 +434,11 @@
       cursor: pointer;
       transition: all 0.2s;
       text-decoration: none;
-      box-shadow: 0 4px 16px rgba(76,175,80,0.3);
+      box-shadow: 0 4px 16px rgba(160,82,45,0.3);
     }
     .lp-cta:hover {
-      background: #43A047;
-      box-shadow: 0 6px 20px rgba(76,175,80,0.4);
+      background: #8b4526;
+      box-shadow: 0 6px 20px rgba(160,82,45,0.4);
       transform: translateY(-1px);
     }
     .lp-badges {
@@ -507,7 +507,7 @@
       height: 36px;
       align-items: center;
       justify-content: center;
-      background: #4CAF50;
+      background: #a0522d;
       color: #fff;
       border-radius: 50%;
       font-weight: bold;
@@ -524,7 +524,7 @@
       color: #888;
       font-size: 0.85em;
     }
-    .lp-tech a { color: #4CAF50; text-decoration: none; }
+    .lp-tech a { color: #a0522d; text-decoration: none; }
     .lp-tech a:hover { text-decoration: underline; }
 
     .lp-footer {
@@ -550,7 +550,7 @@
       display: inline;
       background: none;
       border: none;
-      color: #1a73e8;
+      color: #4a6741;
       cursor: pointer;
       font-size: 0.8em;
       text-decoration: underline;
@@ -582,7 +582,7 @@
     .feedback-modal h2 {
       margin-bottom: 16px;
       font-size: 1.2em;
-      border-bottom: 2px solid #4CAF50;
+      border-bottom: 2px solid #a0522d;
       padding-bottom: 8px;
     }
     .feedback-modal .form-group { margin-bottom: 14px; }
@@ -604,12 +604,12 @@
     .btn-cancel:hover { background: #ddd; }
     .feedback-link {
       display: inline-block;
-      color: #4CAF50;
+      color: #a0522d;
       cursor: pointer;
       font-size: 0.85em;
       text-decoration: underline;
     }
-    .feedback-link:hover { color: #2e7d32; }
+    .feedback-link:hover { color: #7a3d22; }
 
     /* 家事按分 modal */
     .kajianbu-table {
@@ -647,7 +647,7 @@
     <!-- ==================== Landing Page ==================== -->
     <div class="lp" id="lp">
       <div class="lp-hero">
-        <h1>みんなの経理</h1>
+        <h1>Choreia Books</h1>
         <p class="tagline">個人から中小法人まで使える<br>完全無料クラウド会計ソフト</p>
         <p class="sub-tagline">インストール不要。ブラウザだけで、すべての経理業務を。</p>
         <button class="lp-cta" onclick="enterApp()">使ってみる</button>
@@ -715,8 +715,8 @@
           <tbody>
             <tr><td rowspan="2" style="font-weight:bold;vertical-align:top">Phase 0</td><td rowspan="2" style="vertical-align:top">個人（家計簿）</td><td>収支記録・カテゴリ管理</td><td style="color:#999">予定</td></tr>
             <tr><td>月次・年次レポート</td><td style="color:#999">予定</td></tr>
-            <tr style="border-top:2px solid #ddd"><td rowspan="4" style="font-weight:bold;vertical-align:top">Phase 1</td><td rowspan="4" style="vertical-align:top">個人事業主</td><td>税金シミュレーション</td><td style="color:#4CAF50;font-weight:bold">完了</td></tr>
-            <tr><td>仕訳帳・損益計算書・請求書</td><td style="color:#4CAF50;font-weight:bold">完了</td></tr>
+            <tr style="border-top:2px solid #ddd"><td rowspan="4" style="font-weight:bold;vertical-align:top">Phase 1</td><td rowspan="4" style="vertical-align:top">個人事業主</td><td>税金シミュレーション</td><td style="color:#a0522d;font-weight:bold">完了</td></tr>
+            <tr><td>仕訳帳・損益計算書・請求書</td><td style="color:#a0522d;font-weight:bold">完了</td></tr>
             <tr><td>貸借対照表・家事按分・源泉徴収</td><td style="color:#f57c00">開発中</td></tr>
             <tr><td>確定申告書の数値集計</td><td style="color:#999">予定</td></tr>
             <tr style="border-top:2px solid #ddd"><td rowspan="3" style="font-weight:bold;vertical-align:top">Phase 2</td><td rowspan="3" style="vertical-align:top">一人法人</td><td>法人決算書（P/L・B/S）</td><td style="color:#999">予定</td></tr>
@@ -735,8 +735,8 @@
       </div>
 
       <div class="lp-footer">
-        <a href="https://github.com/Choreia/minnano-keiri" target="_blank">GitHub</a> &nbsp;|&nbsp;
-        <a href="https://github.com/Choreia/minnano-keiri/blob/master/CONTRIBUTING.md" target="_blank">コントリビュート</a> &nbsp;|&nbsp;
+        <a href="https://github.com/Choreia/Books" target="_blank">GitHub</a> &nbsp;|&nbsp;
+        <a href="https://github.com/Choreia/Books/blob/master/CONTRIBUTING.md" target="_blank">コントリビュート</a> &nbsp;|&nbsp;
         <a href="#" onclick="openFeedback();return false">バグ報告・機能要望</a> &nbsp;|&nbsp;
         MIT License
       </div>
@@ -744,7 +744,7 @@
 
     <!-- ==================== App (hidden until "始める") ==================== -->
     <div class="app-wrapper" id="app-wrapper">
-      <h1>みんなの経理</h1>
+      <h1>Choreia Books</h1>
       <p class="subtitle">個人〜中小法人 | サーバー不要・完全無料</p>
 
       <!-- Auth bar -->
@@ -1020,7 +1020,7 @@
                 <thead><tr><th>摘要</th><th style="text-align:right">源泉徴収額</th><th>日付</th></tr></thead>
                 <tbody id="wh-tbody"></tbody>
               </table>
-              <div style="margin-top:16px;padding:16px;background:#e8f5e9;border-radius:8px">
+              <div style="margin-top:16px;padding:16px;background:#f5ece5;border-radius:8px">
                 <div style="display:flex;justify-content:space-between;font-weight:bold;font-size:1.1em">
                   <span>源泉徴収 年間合計</span>
                   <span id="wh-total"></span>
@@ -1145,7 +1145,7 @@
       <footer>
         <a href="#" onclick="showLP();return false">トップページに戻る</a> &nbsp;|&nbsp;
         <a href="#" onclick="openFeedback();return false">バグ報告・機能要望</a> &nbsp;|&nbsp;
-        Powered by <a href="https://github.com/Choreia/minnano-keiri" target="_blank">みんなの経理</a> (Rust + WebAssembly)
+        Powered by <a href="https://github.com/Choreia/Books" target="_blank">Choreia Books</a> (Rust + WebAssembly)
       </footer>
 
     <!-- Feedback Modal -->
@@ -1246,7 +1246,7 @@
     var journalEntries = [];
     var currentInvoiceData = null;
 
-    var SPREADSHEET_TITLE = 'みんなの経理データ';
+    var SPREADSHEET_TITLE = 'Choreia Books データ';
 
     // 勘定科目マスタ
     var ACCOUNTS = {
@@ -1822,7 +1822,7 @@
       var profitTr = document.createElement('tr');
       profitTr.style.fontSize = '1.2em';
       profitTr.innerHTML = '<td style="font-weight:bold">当期純利益</td>'
-        + '<td class="num" style="font-weight:bold;color:' + (profit >= 0 ? '#2e7d32' : '#d32f2f') + '">' + fmtNum(profit) + '</td>';
+        + '<td class="num" style="font-weight:bold;color:' + (profit >= 0 ? '#7a3d22' : '#d32f2f') + '">' + fmtNum(profit) + '</td>';
       tbody.appendChild(profitTr);
 
       // Show 家事按分 note if any rates are set
@@ -2114,7 +2114,7 @@
       var issueTitle = prefixes[type] + title;
       var issueBody = body || '';
 
-      var url = 'https://github.com/Choreia/minnano-keiri/issues/new'
+      var url = 'https://github.com/Choreia/Books/issues/new'
         + '?title=' + encodeURIComponent(issueTitle)
         + '&body=' + encodeURIComponent(issueBody)
         + '&labels=' + encodeURIComponent(labels[type]);

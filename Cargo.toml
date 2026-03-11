@@ -1,10 +1,10 @@
 [package]
-name = "minnano-keiri"
+name = "choreia-books"
 version = "0.1.0"
 edition = "2021"
-description = "みんなの経理 - 個人事業主・一人法人向け無料税金計算Webアプリ"
+description = "Choreia Books - 個人事業主・一人法人向け無料会計ソフト"
 license = "MIT"
-repository = "https://github.com/Choreia/minnano-keiri"
+repository = "https://github.com/Choreia/Books"
 
 [dependencies]
 kaikei-rs = "0.2"
